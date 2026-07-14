@@ -1,0 +1,31 @@
+{
+    "version": "1.0.3",
+    "description": "Spot ghost jobs before you waste time applying. Local ghost-job scoring with transparent evidence, plus a human-gated apply copilot.",
+    "homepage": "https://github.com/LXBStudioLLC/envoy",
+    "license": "AGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/LXBStudioLLC/envoy/releases/download/v1.0.3/Envoy-v1.0.3-win-x64.zip",
+            "hash": "a5f5830673adf36cc57ef0e05ac1fc5593b8c9cb61adba9cf7a640093c804c5c"
+        }
+    },
+    "shortcuts": [
+        [
+            "Envoy.exe",
+            "Envoy"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/LXBStudioLLC/envoy"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/LXBStudioLLC/envoy/releases/download/v$version/Envoy-v$version-win-x64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/LXBStudioLLC/envoy/releases/download/v$version/SHA256SUMS.txt"
+        }
+    }
+}
